@@ -72,7 +72,7 @@ Six Pillars of the Well-Architected Framework:
 Sustainability - minimizing the environmental impacts. 
 
 # Identity and Access Management (IAM)
-IAM - allows you to manage users and their level of access to the AWS console.
+**IAM** - allows you to manage users and their level of access to the AWS console.
 
 Root account is the email address you used to sign up for AWS. The root account has full administrative access to AWS. It is very important to secure this account.
 
@@ -87,11 +87,11 @@ How do we control permissions using IAM?
 
 - IAM happens globally. It is not restricted to a region or zone.
 
-Users - a physical person 
+**Users** - a physical person 
 
-Groups - functions such as admin, developers. This contains users.
+**Groups** - functions such as admin, developers. This contains users.
 
-Roles - Internal usage within AWS.
+**Roles** - Internal usage within AWS.
 
 - It is best practise for users to inherit permissions from groups.
 - One user should always equal one physical person.
