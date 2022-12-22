@@ -74,7 +74,7 @@ How to secure root account?
 - Turn on Multi-factor auth (MFA)
 - Create an admin group for your administrators and assign the appropriate permissions to this group.
 - Create user accounts for your admins
-		○ Add your users to the admin group
+○ Add your users to the admin group
 
 How do we control permissions using IAM? 
 - We assign permissions using policy docs, which are made up of JSON.
@@ -101,4 +101,4 @@ Access key ID and Secret Access Keys are used for programmatic access to AWS ser
 - Only get to view these once. So don’t lose them.
 - Always set a password rotations. You can create and customize your own policies for these.
 
-An deny will always override an allow![image](https://user-images.githubusercontent.com/55508777/209054586-9f372755-1097-44b9-9b40-5d18d30e44eb.png)
+An deny will always override an allow!
