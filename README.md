@@ -1,1 +1,1 @@
-# AWSSolutionArchCert
+# AWS Solution Architect Certification Notes
