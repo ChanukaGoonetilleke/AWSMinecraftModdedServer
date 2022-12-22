@@ -1,6 +1,6 @@
 # AWS Solution Architect Certification Notes
 
-These are my note I took from take the A Cloud Guru AWS Certified Solutions Architect - Associate (SAA-C03)
+These are my note I took from take the A Cloud Guru AWS Certified Solutions Architect - Associate (SAA-C03). Hope this helps someone!
 
 Table of Content 
 1. AWS Fundamentals
@@ -64,3 +64,41 @@ Six Pillars of the Well-Architected Framework:
 - Cost Optimization - avoid unnecessary costs.
 - Reliability - does not crash from unexpected load.
 Sustainability - minimizing the environmental impacts. 
+
+# Identity and Access Management (IAM)
+IAM - allows you to manage users and their level of access to the AWS console.
+
+Root account is the email address you used to sign up for AWS. The root account has full administrative access to AWS. It is very important to secure this account.
+
+How to secure root account?
+- Turn on Multi-factor auth (MFA)
+- Create an admin group for your administrators and assign the appropriate permissions to this group.
+- Create user accounts for your admins
+		○ Add your users to the admin group
+
+How do we control permissions using IAM? 
+- We assign permissions using policy docs, which are made up of JSON.
+
+- IAM happens globally. It is not restricted to a region or zone.
+
+Users - a physical person 
+
+Groups - functions such as admin, developers. This contains users.
+
+Roles - Internal usage within AWS.
+
+- It is best practise for users to inherit permissions from groups.
+- One user should always equal one physical person.
+
+The principle of least privilege - only assign a user the minimum amount of privileges they need to do their job.
+
+IAM Federation you can combine your existing user account with AWS. For example, when you log on to your PC (Usually using Microsoft AD), you can use the same credentials to login to AWS if you set up federation. 
+- Identity Federation - uses the SAML standard, which his Active Directory.
+
+- Access key Id and secret access keys are not the same as username and password.
+
+Access key ID and Secret Access Keys are used for programmatic access to AWS services.
+- Only get to view these once. So don’t lose them.
+- Always set a password rotations. You can create and customize your own policies for these.
+
+An deny will always override an allow![image](https://user-images.githubusercontent.com/55508777/209054586-9f372755-1097-44b9-9b40-5d18d30e44eb.png)
