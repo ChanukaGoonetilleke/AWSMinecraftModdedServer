@@ -1,4 +1,7 @@
 # AWS Solution Architect Certification Notes
+
+These are my note I took from take the A Cloud Guru AWS Certified Solutions Architect - Associate (SAA-C03)
+
 Table of Content 
 1. AWS Fundamentals
 2. Identity and Access Management (IAM)
