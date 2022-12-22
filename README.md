@@ -246,4 +246,25 @@ Optimizing S3 Performance:
 
 S3 Prefixes - is the folders inside our S3 buckets. Does not include the object name or file type as follows: 
 
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/55508777/209055842-137d0399-b41d-4e81-86dc-946e4346d654.png">
 
+- The more prefixes you have the better the performance will be for S3 for your application. 
+
+Limitation - the SSE-KMS encrypt takes time when you upload a file, you will call GenerateDataKey in the KMS API. When you downloads a file, you will call Decrypt in the KMS API.
+- The limits are region specific. 
+
+Multipart Uploads: parallelize uploads (increases efficiency). Recommended for files over 100MB and required for files over 5 GB 
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/55508777/209055903-59d2d89a-4fb5-42cc-9113-9e40f03dfa99.png">
+
+S3 Byte-Range Fetches: parallelize downloads by specifying byte ranges. If there's a failure in the download, its only for a specific byte range.
+
+<img width="555" alt="image" src="https://user-images.githubusercontent.com/55508777/209055966-24bd7649-1957-45d1-a704-b88ddb881b32.png">
+
+Backing up Data with S3 Replication:
+
+S3 Replication is replicating objects from one bucket to another. Versioning must be enabled on both the source and destination buckets 
+- Objects in an existing bucket are not replicated automatically. Once replication is turned on, all subsequent updated objects will be replicated automatically.
+- Delete marks  are not replicated by default. Deleting individual versions or delete marker will not be replicated.
+
+Cross region replication = S3 Replication 
