@@ -15,7 +15,7 @@ Table of Content
 10. Monitoring
 11. High Availability and Scaling
 12. Decoupling Workflows
- 13. Big Data!
+13. Big Data
 
 
 
