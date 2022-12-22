@@ -74,7 +74,7 @@ How to secure root account?
 - Turn on Multi-factor auth (MFA)
 - Create an admin group for your administrators and assign the appropriate permissions to this group.
 - Create user accounts for your admins
-○ Add your users to the admin group
+- Add your users to the admin group
 
 How do we control permissions using IAM? 
 - We assign permissions using policy docs, which are made up of JSON.
