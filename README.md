@@ -269,7 +269,7 @@ S3 Replication is replicating objects from one bucket to another. Versioning mus
 
 Cross region replication = S3 Replication 
 
-#Elastic Compute Cloud (EC2)
+# Elastic Compute Cloud (EC2)
 
 EC2 - secure, resizable compute capacity in the cloud. Is a VM hosted in the cloud.
 - Only  pay for what you use.
