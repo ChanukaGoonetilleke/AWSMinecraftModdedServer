@@ -31,3 +31,14 @@ sudo yum install screen
 screen -S mcserver
 
 java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.2.jar nogui
+
+Here is how to restart the instance after stopping:
+1. Start the EC2 instance.
+2. Connect to instance.
+3. Enter the following in the command line:
+
+cd /minecraft
+
+java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.2.jar nogui
+
+4. Now connect to your minecraft server with the new ip address.
