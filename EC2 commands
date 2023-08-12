@@ -30,7 +30,7 @@ sudo yum install screen
 
 screen -S mcserver
 
-java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.2.jar nogui
+java -Xmx1024M -Xms1024M -jar <Forge .jar file> nogui
 
 Here is how to restart the instance after stopping:
 1. Start the EC2 instance.
