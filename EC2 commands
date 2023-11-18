@@ -39,6 +39,6 @@ Here is how to restart the instance after stopping:
 
 cd /minecraft
 
-java -Xmx1024M -Xms1024M -jar minecraft_server.1.12.2.jar nogui
+java -Xmx1024M -Xms1024M -jar <Forge .jar file>  nogui
 
 4. Now connect to your minecraft server with the new ip address.
